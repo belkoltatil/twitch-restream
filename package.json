@@ -1,0 +1,17 @@
+{
+  "name": "twitch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "get-twitch-stream": "github:cmd430/get-twitch-stream",
+    "pupa": "^2.1.1",
+    "twitch-realtime": "github:cmd430/twitch-realtime"
+  }
+}

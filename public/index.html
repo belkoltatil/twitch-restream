@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{channel}} - Restream</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="./js/functions.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <section id="stream">
+        <video playsinline></video>
+        <div id="video-controls">
+          <span id="title">
+            <h1>{{title}}</h1>
+            <h2>{{game}}</h2>
+          </span>
+          <span id="play_pause">
+            <button class="icon-pause"></button>
+          </span>
+          <span id="volume">
+            <input type="range" min="0" max="1" step="0.01" value="1.0">
+          </span>
+          <span id="status">
+            <h3 class="icon-{{status}}">{{status}}</h3>
+          </span>
+          <span id="reload">
+            <button class="icon-reload"></button>
+          </span>
+        </div>
+      </section>
+      <section id="stream-chat">
+        <iframe src="https://www.twitch.tv/embed/{{channel}}/chat?darkpopout&parent={{host}}" height="100%" width="350" frameBorder="0"></iframe>
+      </section>
+    </main>
+  </body>
+</html>
