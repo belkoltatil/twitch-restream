@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
       enableWorker: true,
       lowLatencyMode: true,
       backBufferLength: 0,
-      liveSyncDurationCount: 1
+      liveSyncDurationCount: 2
     })
     hls.loadSource(videoSrc)
     hls.attachMedia(video)

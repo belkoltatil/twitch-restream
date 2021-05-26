@@ -37,6 +37,7 @@ async function startTranscode () {
     const transcode = await transcoder({
       bitrate: process.env.TRANSCODE_BITRATE,
       height: process.env.TRANSCODE_HEIGHT,
+      fps: process.env.TRANSCODE_FPS,
       chunks: process.env.TRANSCODE_CHUNKS,
       chunkLength: process.env.TRANSCODE_CHUNK_LENGTH,
       streamURL: await twitchStream.getStreamURL([ 'source' ]),
