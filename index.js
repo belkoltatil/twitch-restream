@@ -8,6 +8,7 @@ const TwitchPubSub = require('twitch-realtime')
 const transcoder = require('./transcoder')
 
 const twitchStream = new TwitchStream({
+  lowLatency: true,
   channel: process.env.CHANNEL
 })
 const twitchPubSub = new TwitchPubSub({
